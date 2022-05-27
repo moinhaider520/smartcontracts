@@ -1150,7 +1150,7 @@ contract Melian is ERC721Enumerable, Ownable {
     uint256 public maxMintAmount = 5;
     bool public paused = false;
 
-    constructor() ERC721("Melian NFT Collection", "MEL") {}
+    constructor() ERC721("MELIAN NFT Collection", "MELIAN") {}
         // internal
         function _baseURI() internal view virtual override returns (string memory) {
         return "ipfs://EE5MmqVp5MmqVp7ZRMBBizicVh9ficVh9fjUofWicVh9f/";
