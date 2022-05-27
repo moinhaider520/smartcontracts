@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract CocoaRewards is ERC20, ERC20Burnable, Ownable {
+contract Cocoa is ERC20, ERC20Burnable, Ownable {
   using SafeMath for uint256;
 
   mapping(address => uint256) private _balances;
@@ -17,8 +17,8 @@ contract CocoaRewards is ERC20, ERC20Burnable, Ownable {
   uint256 private MAXSUP;
   uint256 constant MAXIMUMSUPPLY=500000000*10**18;
 
-  constructor() ERC20("COCOA", "Cocoa") { 
-      _mint(msg.sender, 40000000 * 10 ** 18);
+  constructor() ERC20("Cocoa", "COCOA") { 
+      _mint(msg.sender, 40050000 * 10 ** 18);
 
   }
 
